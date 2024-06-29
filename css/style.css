@@ -1,0 +1,883 @@
+/* --------Resets--------- */
+
+body {
+    background-color: #fff;
+    color: #333;
+    /* height: 8000px; */
+}
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+h2 , h3 , h4 , h5 {
+    font-family: "Source Sans 3", sans-serif;
+}
+p {
+    font-family: "Roboto", sans-serif;
+
+}
+
+.p2 a {
+    color: #909090;
+}
+.clr {
+    clear: both;
+}
+/* --------Home--------- */
+.home {
+    height: 100vh;
+    background-image: url(../images/hero\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: auto;
+    overflow: hidden;
+}
+
+.home::after {
+    content: "";
+    background-color:rgba(0, 0, 0, 0.8) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+header {
+    /* background-color: rgba(255, 0, 0, 0.8); */
+    /* overflow: hidden; */
+    z-index: 2;
+    position: relative;
+    padding-block: 5px;
+}
+
+header .container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+header .container h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    float: left;
+    /* background-color: lightblue; */
+    padding: 10px;
+    color: #FF2F5B;
+    cursor: pointer;
+}
+
+header .container ul {
+    list-style: none;
+    float: right;
+    /* background-color: lightblue; */
+    margin-top: 5px;
+}
+
+header .container ul li {
+    float: left;
+    padding: 10px;
+    margin-inline: 3px;
+    /* background-color: lightblue; */
+}
+
+header .container ul li a {
+    display: block;
+    /* padding: 10px; */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Source Sans 3", sans-serif;
+    transition: .3s;
+}
+
+header .container ul li a:hover {
+    color: #FF2F5B;
+}
+
+/* ---------------- */
+.home-content {
+    /* background-color: #eeff00; */
+    position: absolute;
+    top: 7.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+}
+
+.home-content .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -60%);
+    /* background-color: aqua; */
+    z-index: 3;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.home-content .container span {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.home-content .container h2 {
+    font-size: 4.7rem;
+    font-weight: 900;
+    /* background-color: red; */
+    padding: 0 120px;
+    color: #FF2F5B;
+    margin-block: 4px;
+}
+.home-content .container h3 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    /* background-color: red; */
+
+}
+
+/* --------About-------- */
+
+
+.hello  {
+    background-color: #fff;
+    margin-block: 10px;
+}
+
+.hello .container {
+    padding: 40px ;
+    width: 70%;
+    background-color: #fff;
+    margin-inline: auto;
+}
+
+.hello .container .image {
+    width: 360px;
+    /* border: 10px solid; */
+    box-shadow: -15px -16px 0 0 #000000;
+    float: left;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.hello .container .image-ovarlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.hello .container .image-ovarlay img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    transform: translate(15px , 15px);
+}
+
+
+.hello .container .image .layer {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.5);
+    transform: translate(15px , 15px);
+    transition: top .7s;
+    border-radius: 5px;
+}
+
+
+.hello .container .image:hover .layer {
+    top: 0;
+}
+
+
+
+.hello .container .image .layer .social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 10px 0;
+    width: 70%;
+    text-align: center;
+}
+
+.hello .container .image .layer .social i {
+    font-size: 1.7rem;
+    margin-inline: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+}
+
+.hello .container .image .layer .social i:hover {
+    color: #FF2F5B;
+}
+
+
+.hello .container .right {
+    float: right;
+    /* background-color: green; */
+    width: 50%;
+    padding: 10px 30px;
+}
+
+.hello .container .right .top h4 {
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    /* background-color: aqua; */
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.hello .container .right .top h4::before {
+    content: "";
+    width: 5px;
+    height: 50%;
+    background-color: #FF2F5B;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+.hello .container .right .top p {
+    font-size: 1.9;
+    /* margin-block: 15px; */
+    padding: 30px 0;
+    /* background-color: red; */
+    border-bottom: 1px dashed;
+}
+
+
+.hello .container .right .desc {
+    width: 80%;
+    /* background-color: #fff; */
+
+}
+
+
+.hello .container .right .desc .p1 {
+    float: left;
+}
+
+.hello .container .right .desc span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.hello .container .right .desc .p2 {
+    float: right;
+}
+
+
+.hello .container .right .desc p {
+    padding: 20px 0;
+}
+
+.btns {
+    /* background-color: lightseagreen; */
+    margin-top: 5px;
+    /* width: 50%; */
+}
+.btns button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #FF2F5B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.btns button:hover {
+    background-color: #EC2404;
+}
+
+/* --------Our Services-------- */
+
+.our-services {
+    background-color: #F1F1F1;
+    padding-block: 50px;
+}
+
+.our-services .container {
+    width: 85%;
+    /* background-color: yellowgreen; */
+    margin-inline: auto;
+    padding-block: 50px;
+
+}
+
+.our-services .container h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+}
+
+.our-services .container h4::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    width: 50%;
+    height: 8px;
+    border-top: 1px solid #FF2F5B;
+    border-bottom: 1px solid #FF2F5B;
+    
+}
+
+.our-services .container h4::after {
+    content: "";
+    position: absolute;
+    top: 127%;
+    left: 10%;
+    background-color: #FF2F5B;
+    width: 80%;
+    height: 1px;
+}
+
+.sevices-card {
+    margin-top: 70px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.sevices-card .card {
+    float: left;
+    width: calc(25% - 20px);
+    margin-inline: 10px;
+    padding: 60px 0;
+    transition:all .5s;
+
+}
+
+.sevices-card .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+}
+
+.sevices-card .card i {
+    font-size: 2rem;
+    color: #FF2F5B;
+    transition: transform .5s;
+}
+
+.sevices-card .card:hover i {
+    transform: scale(1.2);
+}
+
+.sevices-card .card h5 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-block: 10px;
+
+}
+
+.sevices-card .card p {
+    width: 90%;
+    /* background-color: bisque; */
+    margin-inline: auto;
+    font-size: 1rem;
+}
+
+.our-portfolio {
+    background-color: #fff;
+}
+.our-portfolio .container {
+    width: 85%;
+    margin-inline: auto;
+    padding-block: 50px;
+}
+
+.our-portfolio .container h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+}
+
+.our-portfolio .container h4::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    width: 50%;
+    height: 8px;
+    border-top: 1px solid #FF2F5B;
+    border-bottom: 1px solid #FF2F5B;
+}
+
+.our-portfolio .container h4::after {
+    content: "";
+    position: absolute;
+    top: 127%;
+    left: 10%;
+    background-color: #FF2F5B;
+    width: 80%;
+    height: 1px;
+}
+
+.our-portfolio .container .categories {
+    /* background-color: red; */
+    margin-block: 40px;
+    padding: 10px;
+    /* width: fit-content; */
+    text-align: center;
+}
+.our-portfolio .container .categories span {
+    margin-inline: 10px;
+    /* background-color: antiquewhite; */
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.our-portfolio .container .categories span:first-of-type {
+    color: #FF2F5B;
+}
+
+.our-portfolio .container .card {
+    width: calc(33.3333333333% - 20px);
+    margin: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.our-portfolio .container .card .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.496);
+    z-index: 3;
+    opacity: 0;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.our-portfolio .container .card:hover .layer {
+    opacity: .9;
+}
+
+.our-portfolio .container .card .layer i {
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+    font-size: 1.5rem;
+    color: #FF2F5B;
+}
+
+.our-portfolio .container .card img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+.statistics {
+    background-color: #F1F1F1;
+}
+.statistics .container {
+    /* background-color: teal; */
+    width: 85%;
+    margin-inline: auto;
+}
+
+.statistics .container .card {
+    /* background-color: blue; */
+    float: left;
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.statistics .container .card i {
+    font-size: 2rem;
+    color: #FF2F5B;
+    
+}
+.statistics .container .card span {
+    display: block;
+    margin-top: 5px;
+    font-size: 2rem;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+}
+
+.statistics .container .card p {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+
+/* ----------- */
+
+.clients-feedback .container {
+    /* background-color: teal; */
+    width: 60%;
+    margin-inline: auto;
+    padding: 50px 0;
+}
+
+.clients-feedback .container h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+}
+
+.clients-feedback .container h4::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    width: 50%;
+    height: 8px;
+    border-top: 1px solid #FF2F5B;
+    border-bottom: 1px solid #FF2F5B;
+}
+
+.clients-feedback .container h4::after {
+    content: "";
+    position: absolute;
+    top: 127%;
+    left: 10%;
+    background-color: #FF2F5B;
+    width: 80%;
+    height: 1px;
+} 
+
+.clients-feedback .container .card {
+    margin-block: 70px;
+    background-color: #F1F1F1;
+    padding: 30px 10px 30px 0;
+    width: 80%;
+    margin-inline: auto ;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.clients-feedback .container .card::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    background-color: #FF2F5B;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg) translate(-80% , -25%);
+    z-index: 1;
+}
+
+.clients-feedback .container .card .left {
+    float: left;
+    margin-left: 40px;
+} 
+
+.clients-feedback .container .card .left .image {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+    z-index: 2;
+    position: relative;
+}
+.clients-feedback .container .card .left .image img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.clients-feedback .container .card .right {
+    float: left;
+    /* background-color: blue; */
+    margin-left: 20px;
+    padding: 20px 0;
+    width: calc(100% - 160px);
+    position: relative;
+    z-index: 2;
+}
+
+.clients-feedback .container .card .right h5 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.clients-feedback .container .card .right i {
+    color: #777777;
+}
+
+.clients-feedback .container .card .right span {
+    font-family: "Source Sans 3", sans-serif;
+    margin-left: 5px;
+    color: #777777;
+}
+
+.clients-feedback .container .card .right p {
+    /* background-color: antiquewhite; */
+    margin-block: 20px;
+    font-style: italic;
+}
+
+.clients-feedback .container .card .right .rate i:not(:last-child) {
+    color: #F1C30B;
+}
+
+/* ------------ */
+
+.our-blog {
+    background-color: #F1F1F1;
+    padding-block: 70px;
+}
+
+.our-blog .container {
+    /* background-color: tomato; */
+    width: 80%;
+    margin-inline: auto;
+}
+
+.our-blog .container h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+}
+
+.our-blog .container h4::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    width: 50%;
+    height: 8px;
+    border-top: 1px solid #FF2F5B;
+    border-bottom: 1px solid #FF2F5B;
+    
+}
+
+.our-blog .container h4::after {
+    content: "";
+    position: absolute;
+    top: 127%;
+    left: 10%;
+    background-color: #FF2F5B;
+    width: 80%;
+    height: 1px;
+}
+
+.our-blog .container .card {
+    margin: 70px 10px;
+    background-color: #FFFFFF;
+    width: calc(33.3333333333% - 20px );
+    float: left;
+    border-radius: 5px;
+}
+
+.our-blog .container .card .image img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.our-blog .container .card .desc {
+    padding: 20px;
+}
+
+.our-blog .container .card .desc span:first-of-type {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+}
+.our-blog .container .card .desc h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.our-blog .container .card .desc h5:hover {
+    color: #FF2F5B;
+    transition: .3s;
+
+}
+
+.our-blog .container .card .desc p {
+    color: #555;
+    width: 95%;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.our-blog .container .card .desc span:last-of-type {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.our-blog .container .card .desc span:last-of-type:hover {
+    color: #FF2F5B;
+}
+
+
+.our-blog .container .card .yt iframe {
+    width: 100%;
+    height: 210px;
+    border-radius: 5px;
+
+} 
+
+/* ----------------- */
+
+.contact-us {
+    /* background-color: tomato; */
+}
+.contact-us .container {
+    /* background-color: teal; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.contact-us .container h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    
+}
+
+.contact-us .container h4::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    width: 50%;
+    height: 8px;
+    border-top: 1px solid #FF2F5B;
+    border-bottom: 1px solid #FF2F5B;
+}
+
+.contact-us .container h4::after {
+    content: "";
+    position: absolute;
+    top: 127%;
+    left: 10%;
+    background-color: #FF2F5B;
+    width: 80%;
+    height: 1px;
+} 
+
+.contact-us .container form {
+    /* background-color: blueviolet; */
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-us .container form input,
+.contact-us .container form textarea {
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    color: #999;
+    outline: none;
+
+}
+
+.contact-us .container form input:focus,
+.contact-us .container form textarea:focus {
+    border: 1px solid #FF2F5B;
+}
+
+.contact-us .container form input:first-child,
+.contact-us .container form input:nth-child(2) {
+    width: calc(50% - 32px) ;
+}
+.contact-us .container form input:nth-child(3){
+    width: calc(100% - 32px);
+}
+.contact-us .container form textarea{
+    width: calc(100% - 32px);
+    resize: vertical;
+}
+
+.contact-us .container form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 5px;
+    background-color: #FF2F5B;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: not-allowed;
+    transition: .2s;
+}
+
+.contact-us .container form button:hover {
+    background-color: #EC2404;
+}
+/* ---------- */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+footer .icon {
+    /* background-color: red; */
+}
+
+footer .icon i {
+    font-size: 1.4rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+footer .icon i:hover {
+    color: #FF2F5B;
+}
+
+footer p {
+    /* background-color: blueviolet; */
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+footer p a {
+    color: #FF2F5B;
+    /* cursor: pointer; */
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline 1px solid #FF2F5B;
+}
